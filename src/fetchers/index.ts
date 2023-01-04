@@ -4,7 +4,9 @@ export async function fetchBusinessNames(prompt: any){
     try{ 
         const promptReq = {prompt}
         console.log("fetchin",prompt)
-        const response = await fetch("http://localhost:5000/OpenAi", {
+        
+        const response = await fetch("https://online-tools.onrender.com/openAi", {
+          // const response = await fetch("http://localhost:5000/OpenAi", {
             method: 'POST', 
             headers: {
               'Content-Type': 'application/json',
